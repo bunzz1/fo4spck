@@ -8,6 +8,27 @@
   <link rel="stylesheet" href="css/style.css">
   <img src="https://scontent.fvii2-1.fna.fbcdn.net/v/t39.30808-6/528362781_122143720988750445_3842771474728297467_n.png?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=6XZMQEVZNqEQ7kNvwH7INWs&_nc_oc=Admsjc9YIPJ_dg-zf-isuABmV4tVfUOFyKo9SfDH7MY2OCr4I_sSvxDfdEYEpLNGLs_TfFDwdval9-dHWs4e2o-c&_nc_zt=23&_nc_ht=scontent.fvii2-1.fna&_nc_gid=o4F-cxVREkwlaypw-mUYAQ&oh=00_AfW-ZP8cPYWxM-Opi_YRaizizbwkCD8lLVqIMOsL-zYmwg&oe=68AD014B" alt="Logo" class="d-none">
 </head>
+<style>
+  /* Hiệu ứng mượt hơn cho carousel */
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .carousel-fade .carousel-item.active,
+  .carousel-fade .carousel-item-next.carousel-item-start,
+  .carousel-fade .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+  }
+
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    opacity: 0;
+  }
+</style>
+
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Thanh điều hướng -->
