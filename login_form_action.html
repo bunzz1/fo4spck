@@ -1,89 +1,102 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <link rel="stylesheet" href="background.css">
   <meta charset="UTF-8">
-  <title>LOGIN IN EA SPORTS FC ONLINE</title>
-    <link rel="icon" type="image/png" href="https://cdn-gop.garenanow.com/gop/app/0000/032/837/icon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-<!-- ...existing code... -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập - EA SPORTS FC ONLINE</title>
+  <link rel="icon" type="image/png" href="https://cdn-gop.garenanow.com/gop/app/0000/032/837/icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f7f7f7 url('https://fconline.garena.vn/wp-content/uploads/2025/04/bell.jpg') no-repeat center center fixed;
+      background: url('https://fconline.garena.vn/wp-content/uploads/2025/04/bell.jpg') no-repeat center center fixed;
       background-size: cover;
-      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-    form {
-      background: #fff;
-      max-width: 400px;
-      margin: auto;
-      padding: 24px 32px;
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 32px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    label {
-      font-weight: bold;
-      margin-bottom: 4px;
-      display: block;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    input[type="date"],
-    input[type="file"] {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
       width: 100%;
-      padding: 8px;
-      margin-bottom: 8px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
+      max-width: 380px;
     }
-    .gender-group,
-    .hobby-group {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 8px;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-weight: 700;
+      color: #222;
     }
-    button[type="submit"] {
-      background: #007bff;
-      color: #fff;
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .btn-login {
+      background-color: #007bff;
       border: none;
+      color: white;
+      width: 100%;
       padding: 10px;
       border-radius: 6px;
       font-size: 16px;
-      cursor: pointer;
-      margin-top: 8px;
-      transition: background 0.2s;
+      font-weight: 600;
+      transition: 0.2s;
     }
-    button[type="submit"]:hover {
-      background: #0056b3;
+
+    .btn-login:hover {
+      background-color: #0056b3;
+    }
+
+    .login-footer {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 15px;
+    }
+
+    .login-footer a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
-  <form action="login_form_action.html">
-  <div class="register-container">
+  <div class="login-box">
     <h2>Đăng nhập</h2>
-    <form>
+    <form id="loginForm">
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email" required autocomplete="email">
+        <input type="email" id="email" class="form-control" placeholder="Nhập email" required>
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Mật khẩu</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu" required autocomplete="new-password">
+        <input type="password" id="password" class="form-control" placeholder="Nhập mật khẩu" required>
       </div>
-      <button type="submit" class="btn btn-register">Đăng ký</button>
+      <button type="submit" class="btn btn-login">Đăng nhập</button>
     </form>
-    <div class="register-footer">
-      Đã có tài khoản? <a href="register.html">Đăng ký</a>
+    <div class="login-footer">
+      Chưa có tài khoản? <a href="register.html">Đăng ký</a>
     </div>
   </div>
+
+  <script>
+    // Khi bấm đăng nhập -> chuyển trang
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = "home.html"; // 👉 đổi "home.html" sang trang bạn muốn
+    });
+  </script>
 </body>
 </html>
