@@ -2,385 +2,101 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trang chủ - FC Online Esports News (Báo)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập - EA SPORTS FC ONLINE</title>
   <link rel="icon" type="image/png" href="https://cdn-gop.garenanow.com/gop/app/0000/032/837/icon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <img src="https://scontent.fvii2-1.fna.fbcdn.net/v/t39.30808-6/528362781_122143720988750445_3842771474728297467_n.png?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=6XZMQEVZNqEQ7kNvwH7INWs&_nc_oc=Admsjc9YIPJ_dg-zf-isuABmV4tVfUOFyKo9SfDH7MY2OCr4I_sSvxDfdEYEpLNGLs_TfFDwdval9-dHWs4e2o-c&_nc_zt=23&_nc_ht=scontent.fvii2-1.fna&_nc_gid=o4F-cxVREkwlaypw-mUYAQ&oh=00_AfW-ZP8cPYWxM-Opi_YRaizizbwkCD8lLVqIMOsL-zYmwg&oe=68AD014B" alt="Logo" class="d-none">
-</head>
-<style>
-  /* Hiệu ứng mượt hơn cho carousel */
-  .carousel-fade .carousel-item {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-  }
 
-  .carousel-fade .carousel-item.active,
-  .carousel-fade .carousel-item-next.carousel-item-start,
-  .carousel-fade .carousel-item-prev.carousel-item-end {
-    opacity: 1;
-  }
-
-  .carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
-    opacity: 0;
-  }
-</style>
-
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Thanh điều hướng -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-       <a class="navbar-brand" href="spck.html"><img src="https://fconline.garena.vn/wp-content/uploads/2023/09/logo.png" alt="Logo" height="40"></a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="spck.html">🏠Trang chủ</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html">📰Tin tức </a></li>
-          <li class="nav-item"><a class="nav-link" href="login_form_action.html">💌Đăng nhập </a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<div id="newsCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-  <!-- Chấm chỉ mục -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="3"></button>
-  </div>
-
-  <!-- Nội dung các slide -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <a href="https://www.facebook.com/FCOnlineEsportsVN" target="_blank">
-<img src="https://fconline.garena.vn/wp-content/uploads/2023/09/Banner_slide21_FVPLSpring2025_SwissStage_1920x900-3.jpg" class="d-block w-100" alt="slide1">      </a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>FANPAGE CHÍNH THỨC CỦA FC ONLINE ESPORTS VIỆT NAM</h5>
-        <p>Nơi chia sẻ những thông tin nổi bật liên quan tới FC ONLINE ESPORTS VIỆT NAM</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <a href="detail5.html" target="_blank">
-<img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_FCProChampionsCup-2025-DAU_1920x1080.png" class="d-block w-100" alt="slide2">
-      </a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>FC PRO CHAMPIONS CUPS</h5>
-        <p>Giải đấu danh giá nhất FC Online Thế giới</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <a href="https://www.youtube.com/watch?v=xzhaun2gRf4&list=RDxzhaun2gRf4&start_radio=1" target="_blank">
-<img src="https://fconline.garena.vn/wp-content/uploads/2025/07/Frame-LHAT-trong-MV-2048x1152-1.jpg" class="d-block w-100" alt="slide3">
-      </a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>THEME SONG: SỐNG GHI DẤU</h5>
-        <p>BÀI HÁT CHỦ ĐỀ CHO FVPL SUMMER 2025</p>
-      </div>
-    </div>
-
-       <div class="carousel-item">
-      <a href="detail13.html" target="_blank">
-<img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="d-block w-100" alt="slide3">
-      </a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>GIẢI ĐẤU ALL STAR FC ONLINE</h5>
-        <p>THỂ THỨC THI ĐẤU 2V2 MANG ĐẾN GIẢI ĐẤU</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Nút mũi tên -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
-
-
-  <!-- Danh sách tin tức -->
-  <div class="container my-4">
-    <h2 class="mb-4">Tin mới nhất</h2>
-    <div class="row g-4 justify-content-center">
-      <!-- Tin tức 1 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/07/THUMBSEAGAMES33VONGTUYENCHON_326x183.png" class="card-img-top" alt="tin1">
-          <div class="card-body">
-            <h5 class="card-title">Vòng loại SEA GAMES 33 bộ môn FC Online (FO4)</h5>
-            <p class="card-text">Bấm vào đây để xem tin tức số 1</p>
-            <a href="./detail1.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 2 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/07/THUMBSEAGAMES33VONGTUYENCHON_326x183.png" class="card-img-top" alt="tin1">
-          <div class="card-body">
-            <h5 class="card-title">Những cặp đấu đầy duyên nợ của vòng loại SEA GAMES 33 bộ môn FC Online</h5>
-            <p class="card-text">Bấm vào đây để xem tin tức số 2...</p>
-            <a href="./detail2.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 3 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/07/THUMBSEAGAMES33VONGTUYENCHON_326x183.png" class="card-img-top" alt="tin1">
-          <div class="card-body">
-            <h5 class="card-title">Các siêu đội hình của các đội tuyển Vòng tuyển chọn SEA GAMES 33 FC Online </h5>
-            <p class="card-text">Bấm vào đây để xem tin tức số 3...</p>
-            <a href="./detail3.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 4 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://htv.mediacdn.vn/155334506109014016/2025/8/31/3-1756649064734982453434.jpg" class="card-img-top" alt="tin4">
-          <div class="card-body">
-            <h5 class="card-title">SEVENTV CHÍNH THỨC TRỞ THÀNH ĐẠI DIỆN VIỆT NAM THAM DỰ SEA GAMES 33 </h5>
-            <p class="card-text">Cập nhật lịch thi đấu mới nhất của các đội tuyển tham dự.</p>
-            <a href="./detail4.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 5 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://images.ctfassets.net/lz8ubpsr15g3/2DB94L2Ef8EgkEhNQiTc5r/54a34a953d36ea2e96964f73331470fe/Metadata.png?fm=webp&q=70&w=1000&h=1000" class="card-img-top" alt="tin5">
-          <div class="card-body">
-            <h5 class="card-title">12 ĐỘI TUYỂN THAM DỰ FC PRO CHAMPIONS CUP 2025</h5>
-            <p class="card-text">Những chia sẻ thú vị từ các tuyển thủ trước trận đấu quan trọng.</p>
-            <a href="./detail5.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 6 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/08/KV_FCPROCC25_1920x1080.png" class="card-img-top" alt="tin5">
-          <div class="card-body">
-            <h5 class="card-title">Đội hình 12 đội tuyển ra quân FC PRO CHAMPIONS CUP 2025</h5>
-            <p class="card-text">Những đại diện VIỆT NAM - HÀN QUỐC - TRUNG QUỐC - THÁI LAN đưa ra những lực lượng mạnh nhất cho giải đấu FPCC</p>
-            <a href="./detail6.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 7 -->
-       <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/08/KV_FCPROCC25_1920x1080.png" class="card-img-top" alt="tin5">
-          <div class="card-body">
-            <h5 class="card-title">LỊCH THI ĐẤU VÒNG BẢNG FC PRO CHAMPIONS CUP 2025</h5>
-            <p class="card-text">Lịch thi đấu vòng bảng FC Pro Champions Cup 2025 chính thức được công bố với sự góp mặt của 12 đội tuyển hàng đầu từ Việt Nam, Hàn Quốc, Trung Quốc và Thái Lan.</p>
-            <a href="./detail7.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-       </div>
-<!-- ...existing code... -->
-      <!-- Tin tức 8 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://i.pinimg.com/736x/df/a2/6c/dfa26c4224fab6dc78768750a25a99c5.jpg" class="card-img-top" alt="tin8">
-          <div class="card-body">
-            <h5 class="card-title">DRAFT PICK FC PRO CHAMPIONS CUPS 2025</h5>
-            <p class="card-text">Những cầu thủ được các đội tuyển sử dụng trong FPCC 2025.</p>
-            <a href="./detail8.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 9 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/08/KV_FCPROCC25_1920x1080.png" class="card-img-top" alt="tin9">
-          <div class="card-body">
-            <h5 class="card-title">TOP 3 CÁC TUYỂN THỦ XUẤT SẮC CỦA MỖI NƯỚC TẠI FC PRO CHAMPIONS CUP 2025 </h5>
-            <p class="card-text">Những tuyển thủ ấn tượng của mỗi nước tại FPCC 2025.</p>
-            <a href="./detail9.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 10 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/08/KV_FCPROCC25_1920x1080.png" class="card-img-top" alt="tin10">
-          <div class="card-body">
-            <h5 class="card-title">CẬP NHẬT TRẬN ĐẤU VÒNG BẢNG CỦA CÁC BẢNG ĐẤU </h5>
-            <p class="card-text">Tổng hợp những TRẬN ĐẤU quan trọng về giải đấu FPCC 2025.</p>
-            <a href="./detail10.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 11 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/08/KV_FCPROCC25_1920x1080.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title">BẢNG XẾP HẠNG VÒNG BẢNG FC PRO CHAMPIONS CUPS 2025 </h5>
-            <p class="card-text">Những bảng điểm của các đội tham gia FPCC 2025</p>
-            <a href="./detail11.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tin tức 12 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/08/KV_FCPROCC25_1920x1080.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title">CẬP NHẬT TRẬN ĐẤU FC PRO CHAMPIONS CUPS 2025</h5>
-            <p class="card-text">Cập nhật những trận thi đấu nảy lửa</p>
-            <a href="./detail12.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-            <!-- Tin tức 13 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> GIỚI THIỆU GIẢI ĐẤU ALL STAR FC ONLINE </h5>
-            <p class="card-text">Cập nhật THỂ THỨC THI ĐẤU THÚ VỊ</p>
-            <a href="./detail13.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-            <!-- Tin tức 14 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> 16 CẶP ĐÔI ĐẤU TRÍ TẠI ALL STAR FC ONLINE 2025 </h5>
-            <p class="card-text">Những cặp đôi bá đạo trong làng FC ONLINE</p>
-            <a href="./detail14.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-         <!-- Tin tức 15 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> BLV BÌNH LUẬN BUỔI LIVESTREAM DRAFT PICK, NHỮNG LƯỢT THỨ TỰ VÀ NHỮNG CẦU THỦ ĐƯỢC PICK TẠI GIẢI ALL STAR FC ONLINE </h5>
-            <p class="card-text">Những cầu thủ được pick tại giải ALL STAR FCO</p>
-            <a href="./detail15.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>\
-          <!-- Tin tức 16 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> LỊCH THI ĐẤU VÒNG ĐỒNG ĐỘI NGÀY 27.09 | ALL-STAR CHAMPIONSHIP </h5>
-            <p class="card-text">Những cặp đấu đầy duyên nợ, kình phùng địch thủ tại giải ALL STAR FCO</p>
-            <a href="./detail16.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-                <!-- Tin tức 17 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> CẬP NHẬT KẾT QUẢ VÒNG ĐỒNG ĐỘI NGÀY 27.09 | ALL-STAR CHAMPIONSHIP </h5>
-            <p class="card-text">Những kết quả cặp đấu đầy duyên nợ, kình phùng địch thủ tại giải ALL STAR FCO</p>
-            <a href="./detail17.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-                <!-- Tin tức 18 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> CẬP NHẬT KẾT QUẢ THI ĐẤU VÒNG ĐỒNG ĐỘI NGÀY 28.09 | ALL-STAR CHAMPIONSHIP </h5>
-            <p class="card-text">Những Kết quả cặp đấu đầy duyên nợ, kình phùng địch thủ tại giải ALL STAR FCO</p>
-            <a href="./detail18.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-                <!-- Tin tức 19 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> LỊCH THI ĐẤU VÒNG CẤM CHỌN NGÀY 04.10 và 05.10 | ALL-STAR CHAMPIONSHIP </h5>
-            <p class="card-text">Những cặp đấu đầy duyên nợ, kình phùng địch thủ tại giải ALL STAR FCO</p>
-            <a href="./detail19.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-                <!-- Tin tức 20 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> CẬP NHẬT KẾT QUẢ THI ĐẤU VÒNG CẤM CHỌN NGÀY 04.10 | ALL-STAR CHAMPIONSHIP </h5>
-            <p class="card-text">Những Kết quả cặp đấu đầy duyên nợ, kình phùng địch thủ tại giải ALL STAR FCO</p>
-            <a href="./detail20.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-                <!-- Tin tức 21 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> CẬP NHẬT KẾT QUẢ THI ĐẤU VÒNG CẤM CHỌN NGÀY 05.10 | ALL-STAR CHAMPIONSHIP </h5>
-            <p class="card-text">Những Kết quả cặp đấu đầy duyên nợ, kình phùng địch thủ tại giải ALL STAR FCO</p>
-            <a href="./detail21.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-                <!-- Tin tức 22 -->
-      <div class="col-12 col-md-4 d-flex">
-        <div class="card flex-fill h-100">
-          <img src="https://fconline.garena.vn/wp-content/uploads/2025/09/KV_AllStar-Championship_1920x1080-3.png" class="card-img-top" alt="tin11">
-          <div class="card-body">
-            <h5 class="card-title"> LỊCH THI ĐẤU CHUNG KẾT VÒNG CẤM CHỌN NGÀY 11.10 | ALL-STAR CHAMPIONSHIP </h5>
-            <p class="card-text">Những Kết quả cặp đấu đầy duyên nợ, kình phùng địch thủ tại giải ALL STAR FCO</p>
-            <a href="./detail22.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
-        </div>
-      </div>
-<footer style="background:#000; color:#fff; text-align:center; padding:32px 0 18px 0; margin-top:40px;">
-  <img src="https://fconline.garena.vn/wp-content/themes/fc-online/assets/img/logos.png?ver=1.0" alt="FC Online Garena" style="height:48px; margin-bottom:18px;">
-  <div style="max-width:900px; margin:auto; font-size:15px; line-height:1.7;">
-    CÔNG TY CỔ PHẦN GIẢI TRÍ VÀ THỂ THAO ĐIỆN TỬ VIỆT NAM<br>
-    QUYẾT ĐỊNH PHÁT HÀNH TRÒ CHƠI ĐIỆN TỬ G1 TRÊN MẠNG: SỐ 1868/QĐ-BTTTT NGÀY 28/9/2023.<br>
-    ĐỊA CHỈ: TẦNG 6, TÒA NHÀ CAPITAL PLACE, 29 LIỄU GIAI, PHƯỜNG NGỌC HÀ, THÀNH PHỐ HÀ NỘI, VIỆT NAM.<br>
-    ĐIỆN THOẠI LIÊN HỆ: 024 7305 3939<br>
-    EMAIL: LEGAL@GARENA.VN
-  </div>
-</footer>
-<!-- ...existing code... -->
   <style>
     body {
-      background: #0d1117;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-            background: url('https://fconline.garena.vn/wp-content/uploads/2025/04/bell.jpg') no-repeat center center fixed;
-       background-size: cover; /* co giãn ảnh full màn hình */
-    }
-    header {
-      background: #161b22;
+      font-family: Arial, Helvetica, sans-serif;
+      background: url('https://fconline.garena.vn/wp-content/uploads/2025/04/bell.jpg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      border-bottom: 2px solid #30363d;
+      height: 100vh;
+      margin: 0;
     }
-    </style>
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 380px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-weight: 700;
+      color: #222;
+    }
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .btn-login {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn-login:hover {
+      background-color: #0056b3;
+    }
+
+    .login-footer {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 15px;
+    }
+
+    .login-footer a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Đăng nhập</h2>
+    <form id="loginForm">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Nhập email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Mật khẩu</label>
+        <input type="password" id="password" class="form-control" placeholder="Nhập mật khẩu" required>
+      </div>
+      <button type="submit" class="btn btn-login">Đăng nhập</button>
+    </form>
+    <div class="login-footer">
+      Chưa có tài khoản? <a href="register.html">Đăng ký</a>
+    </div>
+  </div>
+
+  <script>
+    // Khi bấm đăng nhập -> chuyển trang
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = "spck.html"; // 👉 đổi "home.html" sang trang bạn muốn
+    });
+  </script>
 </body>
 </html>
