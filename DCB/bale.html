@@ -134,109 +134,108 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header class="top-header">
+  <header style="background:#161b22; display:flex; align-items:center; justify-content:space-between; padding:10px 20px; border-bottom:2px solid #30363d;">
     <div class="logo">
-      <a href="../spck.html"><img src="https://fconline.garena.vn/wp-content/uploads/2023/09/logo.png" alt="Logo"></a>
+      <a href="../spck.html"><img src="https://fconline.garena.vn/wp-content/uploads/2023/09/logo.png" alt="Logo" style="height:35px;"></a>
     </div>
-    <nav>
-      <a href="../spck.html">🏠Trang chủ</a>
-      <a href="../news.html">📰Tin tức</a>
-      <a href="../index.html">💌Đăng nhập</a>
-
+    <nav style="display:flex; gap:20px; align-items:center;">
+      <a class="nav-link" href="../spck.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:15px;">
+        <span style="font-size:16px;">🏠</span> Trang chủ
+      </a>
+      <a class="nav-link" href="../news.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:15px;">
+        <span style="font-size:16px;">📰</span> Tin tức
+      </a>
+      <a class="nav-link" href="../index.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:15px;">
+        <span style="font-size:16px;">💌</span> Đăng nhập
+      </a>
     </nav>
   </header>
   <div class="container">
 
-
-  <div class="card">
-    <!-- Header trong card -->
-    <div class="header">
-      <div class="player-info">
-        <h2>Gareth Bale <img src="https://i.fo4players.com/property/class/class2010.png?t=20250828"></h2> 
-       <span>RW 117 | LW 117</span><br>
-        <span>REAL MADRID | WALES 🏴</span><br>
-        <span>16.7.1989 </span><br>
-        <span>183cm | 74kg | 4⭐ TECH </span>
-        <br><span>LEFT FOOT: ⭐⭐⭐⭐⭐</span>
-        <span>RIGHT FOOT: ⭐⭐⭐</span>
+    <div class="card">
+      <!-- Header trong card -->
+      <div class="header">
+        <div class="player-info">
+          <h2>Gareth Bale <img src="https://i.fo4players.com/property/class/class2010.png?t=20250828"></h2> 
+          <span>RW 117 | LW 117</span><br>
+          <span>REAL MADRID | WALES 🏴</span><br>
+          <span>16.7.1989 </span><br>
+          <span>183cm | 74kg | 4⭐ TECH </span>
+          <br><span>LEFT FOOT: ⭐⭐⭐⭐⭐</span>
+          <span>RIGHT FOOT: ⭐⭐⭐</span>
+        </div>
+        <div class="player-photo">
+          <img src="https://s1.fifaaddict.com/fo4/players/ronyvzrkd.png?20250613" alt="Gareth Bale">
+        </div>
       </div>
-      <div class="player-photo">
-        <img src="https://s1.fifaaddict.com/fo4/players/ronyvzrkd.png?20250613" alt="Gareth Bale">
+
+      <!-- Overall Stats -->
+      <div class="stats-overall">
+        <div><h3>124</h3><span>Tốc độ</span></div>
+        <div><h3>118</h3><span>Sút</span></div>
+        <div><h3>114</h3><span>Chuyền</span></div>
+        <div><h3>117</h3><span>Rê bóng</span></div>
+        <div><h3>87</h3><span>Phòng thủ</span></div>
+        <div><h3>111</h3><span>Thể lực</span></div>
+      </div>
+
+      <!-- Detail Stats -->
+      <div class="stats-detail">
+        <div>Sức mạnh: 110</div>
+        <div>Tăng tốc: 125</div>
+        <div>Tốc độ: 124</div>
+        <div>Rê bóng: 121</div>
+        <div>Giữ bóng: 113</div>
+        <div>Nhảy: 119</div>
+        <div>Lực sút: 120</div>
+      </div>
+
+      <!-- Hidden Skills -->
+      <div class="hidden-skills">
+        <h4>C. Số ẩn</h4>
+        <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_52.png?20250613"> Bậc thầy chạy chỗ</p>
+        <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_12.png?20250613"> Tạt bóng sớm (AI)</p>
+        <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_17.png?20250613"> Ma tốc độ (AI)</p> 
+        <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_13.png?20250613"> Sút xoáy</p>
+        <p><img src="https://fo4players.com/client/img/traits/sut-xa-ai.png"> Sút xa (AI)</p>
+        <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_42.png?20250613"> Qua người (AI)</p>
+        <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_6.png?20250613"> Tránh sai chân thuận</p>
+      </div>
+
+      <!-- Radar -->
+      <div class="radar">
+        <canvas id="radarChart" width="300" height="300"></canvas>
       </div>
     </div>
 
-    <!-- Overall Stats -->
-    <div class="stats-overall">
-      <div><h3>124</h3><span>Tốc độ</span></div>
-      <div><h3>118</h3><span>Sút</span></div>
-      <div><h3>114</h3><span>Chuyền</span></div>
-      <div><h3>117</h3><span>Rê bóng</span></div>
-      <div><h3>87</h3><span>Phòng thủ</span></div>
-      <div><h3>111</h3><span>Thể lực</span></div>
-    </div>
-
-    <!-- Detail Stats -->
-    <div class="stats-detail">
-      <div>Sức mạnh: 110</div>
-      <div>Tăng tốc: 125</div>
-      <div>Tốc độ: 124</div>
-      <div>Rê bóng: 121</div>
-      <div>Giữ bóng: 113</div>
-      <div>Nhảy: 119</div>
-      <div>Bình tĩnh: 116</div>
-      <div>Sút xa: 118</div>
-      <div>Vô-lê: 113</div>
-      <div>Chọn vị trí: 119</div>
-      <div>Penalty: 110</div>
-      <div>Lực sút: 120</div>
-    </div>
-
-    <!-- Hidden Skills -->
-    <div class="hidden-skills">
-      <h4>C. Số ẩn</h4>
-      <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_52.png?20250613"> Bậc thầy chạy chỗ</p>
-      <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_12.png?20250613"> Tạt bóng sớm (AI)</p>
-      <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_17.png?20250613"> Ma tốc độ (AI)</p> 
-      <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_13.png?20250613"> Sút xoáy</p>
-      <p><img src="https://fo4players.com/client/img/traits/sut-xa-ai.png"> Sút xa (AI)</p>
-      <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_42.png?20250613"> Qua người (AI)</p>
-      <p><img src="https://s1.fifaaddict.com/fo4/traits/trait_icon_6.png?20250613"> Tránh sai chân thuận</p>
-    </div>
-
-    <!-- Radar -->
-    <div class="radar">
-      <canvas id="radarChart" width="300" height="300"></canvas>
-    </div>
-  </div>
-
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-    const ctx = document.getElementById('radarChart');
-    new Chart(ctx, {
-      type: 'radar',
-      data: {
-        labels: ['Tốc độ', 'Sút', 'Chuyền', 'Rê bóng', 'Phòng thủ', 'Thể lực'],
-        datasets: [{
-          label: 'Chỉ số chính',
-          data: [124, 118, 114, 117, 87, 111],
-          fill: true,
-          backgroundColor: 'rgba(255, 206, 86, 0.2)',
-          borderColor: 'rgba(255, 206, 86, 1)',
-          pointBackgroundColor: 'yellow'
-        }]
-      },
-      options: {
-        scales: {
-          r: {
-            angleLines: { color: '#444' },
-            grid: { color: '#333' },
-            pointLabels: { color: '#fff' }
-          }
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ctx = document.getElementById('radarChart');
+      new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: ['Tốc độ', 'Sút', 'Chuyền', 'Rê bóng', 'Phòng thủ', 'Thể lực'],
+          datasets: [{
+            label: 'Chỉ số chính',
+            data: [124, 118, 114, 117, 87, 111],
+            fill: true,
+            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+            borderColor: 'rgba(255, 206, 86, 1)',
+            pointBackgroundColor: 'yellow'
+          }]
         },
-        plugins: { legend: { display: false } }
-      }
-    });
-  </script>
-</body>
+        options: {
+          scales: {
+            r: {
+              angleLines: { color: '#444' },
+              grid: { color: '#333' },
+              pointLabels: { color: '#fff' }
+            }
+          },
+          plugins: { legend: { display: false } }
+        }
+      });
+    </script>
+  </body>
 </html>

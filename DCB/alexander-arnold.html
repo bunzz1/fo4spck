@@ -130,20 +130,53 @@
       background: #111;
       border-radius: 50%;
     }
+
+    /* Custom Header Style */
+    header {
+      background: #161b22;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-bottom: 2px solid #30363d;
+    }
+    header .logo img {
+      height: 35px;
+    }
+    header nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    header nav a span {
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
   <!-- HEADER -->
-  <header class="top-header">
-    <div class="logo">
-      <a href="../spck.html"><img src="https://fconline.garena.vn/wp-content/uploads/2023/09/logo.png" alt="Logo"></a>
-    </div>
-    <nav>
-      <a href="../spck.html">🏠Trang chủ</a>
-      <a href="../news.html">📰Tin tức</a>
-      <a href="../index.html">💌Đăng nhập</a>
-    </nav>
-  </header>
+  <header style="background:#161b22; display:flex; align-items:center; justify-content:space-between; padding:10px 20px; border-bottom:2px solid #30363d;">
+  <div class="logo">
+    <a href="../spck.html"><img src="https://fconline.garena.vn/wp-content/uploads/2023/09/logo.png" alt="Logo" style="height:35px;"></a>
+  </div>
+  <nav style="display:flex; gap:20px; align-items:center;">
+    <a class="nav-link" href="../spck.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:15px;">
+      <span style="font-size:16px;">🏠</span> Trang chủ
+    </a>
+    <a class="nav-link" href="../news.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:15px;">
+      <span style="font-size:16px;">📰</span> Tin tức
+    </a>
+    <a class="nav-link" href="../index.html" style="color:#fff; text-decoration:none; font-weight:bold; font-size:15px;">
+      <span style="font-size:16px;">💌</span> Đăng nhập
+    </a>
+  </nav>
+</header>
 
   <!-- CONTENT -->
   <div class="container">
